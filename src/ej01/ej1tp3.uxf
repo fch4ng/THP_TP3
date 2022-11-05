@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>100</x><y>380</y><w>210</w><h>190</h></coordinates><panel_attributes>Persona
+--
+-nombre: String
+-apellido: String
+-dni: int
+--
++Persona(String, String, int)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>370</y><w>210</w><h>190</h></coordinates><panel_attributes>Domicilio
+--
+-calle: String
+-numero: String
+-ciudad: String
+--
++Domicilio()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>450</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-domicilio
+m1=1</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>40</y><w>360</w><h>190</h></coordinates><panel_attributes>Agenda
+--
+-ArrayList(Persona): ArrayList
+--
+-Agenda():
+-buscarPersona(int): Persona
++agregarPersona(String, String, int, Domicilio): boolean
++removerPersona(int): Persona
++modificarDomicilio(int, Domicilio): boolean
++listarPersonas(): void
++devolverUltimo(): void
++eliminarTodosElementosAMano(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>220</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+-persona
+m1=*</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element></diagram>
