@@ -21,7 +21,7 @@ public class Test {
 		
 		personas.agregarPersona("Leo", "A", 147258369, domicilio3);
 		
-		personas.listarPersonas();
+		personas.listarPersonas();//usando como lo esta ejemplo muestra posicion de memoria hay que debuggear
 		
 		System.out.println("3 personas agegadas exitosament");
 		
