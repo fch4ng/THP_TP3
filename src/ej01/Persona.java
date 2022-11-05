@@ -48,4 +48,12 @@ public class Persona {
 	public int getDni() {
 		return this.dni;
 	}
+
+	
+	public void mostrar() {
+		System.out.println(this);
+		
+	}
+
+	
 }

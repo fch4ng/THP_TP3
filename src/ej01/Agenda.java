@@ -80,4 +80,30 @@ public class Agenda {
 		}
 		return resultado;
 	}
+
+	public void listarPersonas() {
+		
+		for (Persona persona : this.personas) {
+			
+			persona.mostrar();
+		}
+	}
+
+	public void devolverUltimo () {
+		
+		Persona personaUltima;
+		
+		personaUltima = this.personas.size();
+	}
+	
+	public void eliminarTodosAMano() {
+		
+		Persona personaEliminada;
+		
+		personaEliminada = this.personas.size(0);
+		
+		personaEliminada = this.personas.remove(0);
+	}
+	
+	
 }
