@@ -37,7 +37,7 @@ public class Agenda {
 		
 	}
 
-	public boolean agregarPersona(String nombreAgregar, String apellidoAgregar, int dniAgregar, Domicilio domicilioAgregar ) {
+	public boolean agregarPersona(String nombreAgregar, String apellidoAgregar, int dniAgregar, Domicilio domicilio) {
 		
 		Persona personaAgregada;
 		boolean resultado = false;
@@ -46,7 +46,7 @@ public class Agenda {
 		
 		if(personaAgregada == null) {
 			
-			Persona personaAgregada1 = new Persona(nombreAgregar, apellidoAgregar, dniAgregar, domicilioAgregar);
+			Persona personaAgregada1 = new Persona(nombreAgregar, apellidoAgregar, dniAgregar, domicilio);
 			
 			resultado = this.personas.add(personaAgregada1);
 		}
@@ -64,5 +64,20 @@ public class Agenda {
 			this.personas.remove(personaRemovida);
 		}
 		return personaRemovida;
+	}
+
+	public boolean modificarDomicilio(int dniModificar, Domicilio domicilio) {
+		
+		boolean resultado = false;
+		Persona personaCambioDomicilio;
+		
+		personaCambioDomicilio = this.buscarPersona(dniModificar);
+		
+		if(personaCambioDomicilio != null) {
+			
+			resultado = this.modificarDomicilio(dniModificar, domicilio);
+			
+		}
+		return resultado;
 	}
 }

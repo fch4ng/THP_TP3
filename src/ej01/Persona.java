@@ -7,11 +7,11 @@ public class Persona {
 	private Domicilio domicilio;
 	private int dni;
 	
-	public Persona(String nombre, String apellido, int dni, Domicilio domicilioAgregar) {
+	public Persona(String nombre, String apellido, int dni, Domicilio domicilio) {
 		nombre           = "";
 		apellido         = "";
 		dni              =  0;
-		domicilioAgregar = null;
+		domicilio = null;
 		}
 	
 	private void setNombre(String nombre) {
