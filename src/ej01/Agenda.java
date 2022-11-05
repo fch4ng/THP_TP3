@@ -52,4 +52,17 @@ public class Agenda {
 		}
 		return resultado;
 	}
+
+	public Persona removerPersona(int dniRemover) {
+		
+		Persona personaRemovida = null;
+		
+		personaRemovida = this.buscarPersona(dniRemover);
+		
+		if(personaRemovida != null) {
+			
+			this.personas.remove(personaRemovida);
+		}
+		return personaRemovida;
+	}
 }
