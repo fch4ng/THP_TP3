@@ -37,5 +37,19 @@ public class Agenda {
 		
 	}
 
-	
+	public boolean agregarPersona(String nombreAgregar, String apellidoAgregar, int dniAgregar, Domicilio domicilioAgregar ) {
+		
+		Persona personaAgregada;
+		boolean resultado = false;
+		
+		personaAgregada = this.buscarPersona(dniAgregar);
+		
+		if(personaAgregada == null) {
+			
+			Persona personaAgregada1 = new Persona(nombreAgregar, apellidoAgregar, dniAgregar, domicilioAgregar);
+			
+			resultado = this.personas.add(personaAgregada1);
+		}
+		return resultado;
+	}
 }
