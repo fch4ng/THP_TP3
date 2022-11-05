@@ -5,37 +5,46 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private Domicilio domicilio;
+	private int dni;
 	
-	public Persona() {
-		nombre = "";
+	public Persona(String nombre, String apellido, int dni) {
+		nombre   = "";
 		apellido = "";
+		dni      =  0;
 		}
 	
-	public void setNombre(String nombre) {
+	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void setApellido(String apellido) {
+	
+	private void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 	
+	private void setDomicilio(Domicilio domicilio) {
+		this.domicilio = domicilio;
+	}
+	
+	private void setDni() {
+		dni = this.dni;
+	}
+	
+	public String getNombre() {
+				
+		return this.nombre;
+	}
+	
+	public String getApellido() {
+		
+		
+		return this.apellido;
+	}
+
 	public Domicilio getDomicilio() {
 		return domicilio;
 	}
-
-	public void setDomicilio(Domicilio domicilio) {
-		this.domicilio = domicilio;
-	}
-
-	public String getNombreCompleto() {
-		
-		
-		return '"'+ nombre +" "+  apellido + '"';
-	}
 	
-	public String getDomicilioCompleto() {
-		
-		
-		return '"'+ domicilio.getCalle() +'"'+ domicilio.getNumero() +" "+  domicilio.getCiudad() + '"';
+	public int getDni() {
+		return this.dni;
 	}
-
 }
