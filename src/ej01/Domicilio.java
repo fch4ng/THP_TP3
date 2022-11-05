@@ -6,10 +6,10 @@ public class Domicilio {
 	private String numero;
 	private String ciudad;
 	
-	public Domicilio() {
-		calle = "";
-		numero = "";
-		ciudad = "";
+	public Domicilio(String calle, String numero, String cuidad) {
+		this.calle   = calle;
+		this.numero = numero;
+		this.ciudad = ciudad;
 	}
 
 	public String getCalle() {
@@ -41,7 +41,5 @@ public class Domicilio {
 		
 		return calle +" "+ numero +" "+ ciudad;
 	}
-	
-	
 
 }
