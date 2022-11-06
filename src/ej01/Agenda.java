@@ -85,7 +85,7 @@ public class Agenda {
 		
 		for (Persona persona : this.personas) {
 			
-			persona.toString();
+			System.out.println(persona.toString());
 		}
 	}
 
