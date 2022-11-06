@@ -7,9 +7,9 @@ public class Compania {
 	private String nombreC;
 	private ArrayList<Area> areas;
 	
-	public Compania(String nombreC, ArrayList<Area> areas) {
+	public Compania(String nombreC) {
 		this.nombreC = nombreC;
-		this.areas = areas;
+		this.areas = new ArrayList<Area>();;
 	}
 	
 	public void listarAreas() {

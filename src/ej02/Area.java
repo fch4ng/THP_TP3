@@ -2,15 +2,17 @@ package ej02;
 
 import java.util.ArrayList;
 
+import ej01.Persona;
+
 public class Area {
 	
 	private String nombreA;
 	private ArrayList<Oficina> oficinas;
 	
 	
-	public Area(String nombreA, ArrayList<Oficina> oficinas) {
+	public Area(String nombreA) {
 		this.nombreA = nombreA;
-		this.oficinas = oficinas;
+		this.oficinas = new ArrayList<Oficina>();
 	}
 	
 	public void listarOficinas() {
