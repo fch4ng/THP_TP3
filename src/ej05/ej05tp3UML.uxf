@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>910</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>Ejemplar
+--
+-identificador: String
+-fechaDePrestamo: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;enum&gt;
+Genero
+--
++NOVELA
++TEATRO
++POESIA
++ENSAYO
++OTROS
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>410</y><w>210</w><h>190</h></coordinates><panel_attributes>Libro
+--
+-titulo: String
+-anio: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1200</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;enum&gt;
+Estado
+--
++EN_BIBLIOTECA
++PRESTADO
++EN_REPARACION
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>410</y><w>210</w><h>190</h></coordinates><panel_attributes>Biblioteca
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>530</y><w>210</w><h>190</h></coordinates><panel_attributes>Editorial
+--
+-nombre: String
+-pais: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>770</y><w>210</w><h>190</h></coordinates><panel_attributes>Autor
+--
+-nombre: String
+-nacionalidad: String
+-fechaDeNacimiento: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>90</y><w>210</w><h>190</h></coordinates><panel_attributes>Lectores
+--
+-dni: String
+-nombre: String
+-direccion: String
+-telefono: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>490</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-libros
+m1=0..n</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>500</y><w>270</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+-editorial
+m1=1</panel_attributes><additional_attributes>250;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>170</y><w>270</w><h>360</h></coordinates><panel_attributes>lt=&lt;-
+-genero
+m1=1</panel_attributes><additional_attributes>250;10;10;340</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>500</y><w>270</w><h>390</h></coordinates><panel_attributes>lt=&lt;-
+-autor
+m1=1</panel_attributes><additional_attributes>250;370;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>380</y><w>270</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+-ejemplar
+m1=0..n</panel_attributes><additional_attributes>250;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>350</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-estado
+m1=1</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>180</y><w>120</w><h>250</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;230;10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>180</y><w>140</w><h>250</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>120;230;120;10;10;10</additional_attributes></element></diagram>
