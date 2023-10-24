@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>440</x><y>70</y><w>210</w><h>190</h></coordinates><panel_attributes>ORTFlix
+--
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>720</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;enum&gt;
+Servicio
+--
+_STANDARD_
+_PREMIUM_
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Pelicula
+--
+-String: nombre
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>390</y><w>230</w><h>190</h></coordinates><panel_attributes>Cliente
+--
+-String: dni
+-String: nombre
+-Double: saldoDeudor
+
+--
++esDeudor(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>250</y><w>80</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+-clientes
+m1=0..n</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>570</y><w>210</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+-servicio
+m1=1</panel_attributes><additional_attributes>10;150;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>180</y><w>280</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+-peliculas
+m1=0..n</panel_attributes><additional_attributes>10;210;10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>570</y><w>200</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+-servicio
+m1=1</panel_attributes><additional_attributes>180;150;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Historial Pelicula
+--
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>450</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-historialPeliculas
+m1=1</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>570</y><w>830</w><h>400</h></coordinates><panel_attributes>lt=&lt;-
+-peliculaHistorial
+m1=1..*</panel_attributes><additional_attributes>10;10;10;380;810;380;810;10</additional_attributes></element></diagram>
