@@ -7,6 +7,8 @@ m1=0:*</panel_attributes><additional_attributes>10;140;10;10</additional_attribu
 +mostrarPropiedades(): ArrayList&lt;propiedadesEnVenta&gt;
 +obtenerBarrioMaxProp(): ArrayList&lt;mayorCantidadPropiedadesEnCartera&gt;
 +mostrarBarrioMaxProp():
++cambiarPropiedadDeBarrio(String, Barrio): void
++borrarPropiedad(String): void
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>370</y><w>400</w><h>220</h></coordinates><panel_attributes>Barrio
 --
 +String: nombre
