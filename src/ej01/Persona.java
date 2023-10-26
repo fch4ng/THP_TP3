@@ -8,10 +8,10 @@ public class Persona {
 	private int dni;
 	
 	public Persona(String nombre, String apellido, int dni, Domicilio domicilio) {
-		nombre           = "";
-		apellido         = "";
-		dni              =  0;
-		domicilio = null;
+		setNombre(nombre);           
+		setApellido(apellido);
+		setDni(dni);
+		setDomicilio(domicilio);
 		}
 	
 	private void setNombre(String nombre) {
@@ -26,8 +26,8 @@ public class Persona {
 		this.domicilio = domicilio;
 	}
 	
-	private void setDni() {
-		dni = this.dni;
+	private void setDni(int dni) {
+		this.dni = dni;
 	}
 	
 	public String getNombre() {

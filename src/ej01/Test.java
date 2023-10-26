@@ -9,9 +9,9 @@ public class Test {
 	public static void main(String[] args) {
 		
 		
-		Domicilio domicilio0 = new Domicilio("Yatay", "1234", "CABA");
-		Domicilio domicilio1 = new Domicilio("Belgrano", "1234", "CABA");
-		Domicilio domicilio3 = new Domicilio("Thames", "1234", "CABA");
+		Domicilio domicilio0 = new Domicilio("Yatay", "1234");
+		Domicilio domicilio1 = new Domicilio("Belgrano", "1234");
+		Domicilio domicilio3 = new Domicilio("Thames", "1234");
 		
 		Agenda personas = new Agenda();
 		
@@ -21,7 +21,7 @@ public class Test {
 		
 		personas.agregarPersona("Leo", "A", 147258369, domicilio3);
 		
-		personas.listarPersonas();//usando como lo esta ejemplo muestra posicion de memoria hay que debuggear
+		personas.listarPersonas();
 		
 		System.out.println("3 personas agegadas exitosament");
 		

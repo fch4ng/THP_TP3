@@ -6,10 +6,10 @@ public class Domicilio {
 	private String numero;
 	private String ciudad;
 	
-	public Domicilio(String calle, String numero, String cuidad) {
-		this.calle   = calle;
-		this.numero = numero;
-		this.ciudad = ciudad;
+	public Domicilio(String calle, String numero) {
+		setCalle(calle);
+		setNumero(numero);
+		
 	}
 
 	public String getCalle() {
@@ -28,18 +28,16 @@ public class Domicilio {
 		this.numero = numero;
 	}
 
-	public String getCiudad() {
-		return ciudad;
-	}
-
-	public void setCiudad(String ciudad) {
-		this.ciudad = ciudad;
-	}
-	
 	public String getDomicilio() {
 		
 		
 		return calle +" "+ numero +" "+ ciudad;
 	}
 
+	@Override
+	public String toString() {
+		return "Domicilio [calle=" + calle + ", numero=" + numero + "]";
+	}
+
+	
 }

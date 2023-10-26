@@ -14,15 +14,11 @@ public class Agenda {
 		return personas;
 	}
 
-	private void setPersonas(ArrayList<Persona> personas) {
-		this.personas = personas;
-	}
-	
 	private Persona buscarPersona(int dniBuscar) {
 		
 		Persona persona;
 		Persona personaEncontrada = null;
-		int                     i = 0;
+		                    int i = 0;
 		
 		while(i < this.personas.size() && personaEncontrada == null) {
 			
@@ -93,14 +89,14 @@ public class Agenda {
 		
 		Persona personaUltima;
 		
-		personaUltima = this.personas.size();
+		personaUltima = this.personas.get(personas.size()-1);
 	}
 	
 	public void eliminarTodosAMano() {
 		
 		Persona personaEliminada;
 		
-		personaEliminada = this.personas.size(0);
+		personaEliminada = this.personas.get(0);
 		
 		personaEliminada = this.personas.remove(0);
 	}
