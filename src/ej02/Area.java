@@ -43,5 +43,11 @@ public class Area {
 	}
 
 	
+	@Override
+	public String toString() {
+		return "Area [nombreA=" + nombreA + ", oficinas=" + oficinas + "]";
+	}
+
+	
 
 }

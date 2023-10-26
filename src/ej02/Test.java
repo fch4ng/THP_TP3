@@ -21,16 +21,16 @@ public class Test {
 		oficina0.setEmpleado(empleado0);
 		
 		Oficina oficina1 = new Oficina("1");
-		oficina0.setEmpleado(empleado1);
+		oficina1.setEmpleado(empleado1);
 		
 		Oficina oficina2 = new Oficina("2");
-		oficina0.setEmpleado(empleado2);
+		oficina2.setEmpleado(empleado2);
 		
 		Oficina oficina3 = new Oficina("3");
-		oficina0.setEmpleado(empleado3);
+		oficina3.setEmpleado(empleado3);
 		
 		Oficina oficina4 = new Oficina("4");
-		oficina0.setEmpleado(empleado4);
+		oficina4.setEmpleado(empleado4);
 		
 		Area area0 = new Area("0");
 		area0.getOficinas().add(oficina0);
@@ -45,7 +45,7 @@ public class Test {
 		companiaNueva.getAreas().add(area0);
 		companiaNueva.getAreas().add(area1);
 		
-		companiaNueva.listarAreas();// mismo problema mi metodo listarAreas me muestra la posicion de memoria por pantalla en vez de los datos
+		companiaNueva.listarAreas();
 	}
 
 }

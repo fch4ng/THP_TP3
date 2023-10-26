@@ -24,6 +24,11 @@ public class Oficina {
 	public void setEmpleado(Empleado empleado) {
 		this.empleado = empleado;
 	}
+
+	@Override
+	public String toString() {
+		return "Oficina [nombreO=" + nombreO + ", empleado=" + empleado + "]";
+	}
 	
 	
 	

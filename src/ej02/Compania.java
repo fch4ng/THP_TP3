@@ -35,6 +35,12 @@ public class Compania {
 	private void setAreas(ArrayList<Area> areas) {
 		this.areas = areas;
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Compania [nombreC=" + nombreC + ", areas=" + areas + "]";
+	}
 	
 	
 
