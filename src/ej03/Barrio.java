@@ -19,14 +19,29 @@ public class Barrio {
 		return nombre;
 	}
 	
-	public ArrayList<Propiedad> mostrarPropiedades (tipo){
+	public void mostrarPropiedades (Tipo tipo){
 		
-		//recibe un enum y deveulve un arraylist de propiedades
-		ArrayList<Propiedad> propiedadesMostradas = new ArrayList<Propiedad>();
+		for (Propiedad propiedades: propiedades) {
+            if (tipo != null && propiedades.getTipo() == tipo) {
+                System.out.println(propiedades.toString());
+            }
+        }
 		
-	return propiedadesMostradas;	
+	}
+	
+	public void mostrarPropiedades1 (){
+		
+		for (Propiedad propiedades: propiedades) {
+            
+                System.out.println(propiedades.toString());
+            
+        }
+		
 	}
 
 }
 
 
+/*
+
+*/

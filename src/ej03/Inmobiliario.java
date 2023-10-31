@@ -20,13 +20,17 @@ public class Inmobiliario {
 		return barrios;
 	}
 	
-	public ArrayList<Propiedad> mostrarPropiedades (){
+	public void mostrarPropiedades (){
 		
 		//deveulve un arraylist de propiedades
 		//mostrar la dirección y el precio de todas las propiedades que posea a la venta
-		ArrayList<Propiedad> propiedadesEnVenta = new ArrayList<Propiedad>();
+		for (Barrio propiedad: barrios) {
+              
+			System.out.println(barrios.mostrarPropiedades1()));
+            }
+        }
 		
-	return propiedadesEnVenta;	
+		
 	}
 	
 	public ArrayList<Barrio> obtenerBarrioMaxProp (){
